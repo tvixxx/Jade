@@ -1,4 +1,4 @@
-- var svg = "svg/runa.svg"
+- var svg = "path/to/svg.svg"
 
 mixin use(name)
   svg(class="#{name}" role="img")
