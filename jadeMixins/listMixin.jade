@@ -1,0 +1,25 @@
+ - var defaultItemClass = 'name1'
+    - var defaultLinkClass = 'name2'
+    - var defaultImgClass = 'name3'
+    - var pictPath = 'img/pictures/'
+    -
+      var link = [
+      {src: pictPath + '1.png', alt : '1'},
+      {src: pictPath + '2.png', alt : '2'},
+      {src: pictPath + '3.png', alt : '3'},
+      {src: pictPath + '4.png', alt : '4'},
+      {src: pictPath + '5.png', alt : '5'},
+      {src: pictPath + '6.png', alt : '6'},
+      {src: pictPath + '7.png', alt : '7'},
+      {src: pictPath + '8', alt : '8'}
+      ]
+
+  mixin some-company()
+    ul.some-company__list
+      each img in link
+        li(class="#{defaultItemClass}")
+          a(class="#{defaultLinkClass}")
+            img(class="#{defaultImgClass}" src=img.src alt=img.alt)
+
+  div.some-company
+    +some-company()
