@@ -4,4 +4,4 @@ mixin use(name)
   svg(class="#{name}" role="img")
     use(id="#{name}" xlink:href="#{svg}##{name}")
 
-+use("Runa")
++use("nameSvg")
