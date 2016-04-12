@@ -1,0 +1,3 @@
+ select.portfolio-filter__select-filter
+        each val in [{id : 'dasdas', value : 'All', text : 'All'}, {'data-select-id' : 'dasdas', value : 'Сomplex software', text : 'Сomplex software'}, {id : 'dasdas', value : 'Сloud for SMBs', text : 'Сloud for SMBs'}]
+          option(value=val.id "data-select-id"=val['data-select-id']).portfolio__option #{val.text}
